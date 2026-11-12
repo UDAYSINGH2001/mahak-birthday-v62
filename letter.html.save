@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>A Letter for Mahak</title><link rel="stylesheet" href="style.css"></head><body data-music="music/home.mp3"><nav class="nav"><div class="nav-inner"><div class="brand">Just one last page ♥</div><div class="navlinks"><a data-nav href="index.html">Home</a><a data-nav href="story.html">Beginning</a><a data-nav href="gallery.html">Memories</a><a data-nav href="engagement.html">28 Jan</a><a class="active" href="letter.html">Letter</a></div></div></nav><section class="section"><div class="kicker">Chapter 04 • For Mahak</div><h2>A birthday letter</h2><div class="split"><div class="photo"><img src="images/mahak-new-2026.jpeg" alt="Mahak portrait"></div><article class="letter"><p>My Mahak,</p><p>Happy Birthday. ❤️</p><p>There is one date I will never forget — <b>28 January 2026</b>. It was the first day I saw you, the day I met you, and somehow the same day our engagement began.</p><p>Life gave me a beautiful surprise that day: you.</p><p>I hope this birthday reminds you how loved, valued and special you are. And I hope we keep making little memories that one day become our favorite stories.</p><p>Thank you for being part of my life and for becoming such an important part of my future.</p><p>Today is your birthday, but honestly, I feel like I am the lucky one.</p>
+<div class="love-message">
+  <p>My Mahak, I just want you to know that...</p>
+  <h3>
+<div class="love-message">
+  <p>My Mahak, I just want you to know that...</p>
+  <h2>I LOVE YOU SOOOOO MUCH! ❤️🥹</h2>
+  <p>You are my happiness, my favourite person, my biggest smile and the most beautiful part of my life.</p>
+  <p>Every moment with you is precious. I want to see you smile every day, support you in every situation and hold your hand through every chapter of life.</p>
+  <p>No matter how many birthdays come and go, my wish will always be the same: may I always be the reason behind your beautiful smile.</p>
+  <h3>Forever and Always, Mahak ❤️😘</h3>
+</div>
+<div class="love-message">
+  <p>My Mahak, I just want you to know that...</p>
+  <h2>I LOVE YOU SOOOOO MUCH! ❤️🥹</h2>
+  <p>You are my happiness, my favourite person, my biggest smile and the most beautiful part of my life.</p>
+  <p>Every moment with you is precious. I want to see you smile every day, support you in every situation and hold your hand through every chapter of life.</p>
+  <p>No matter how many birthdays come and go, my wish will always be the same: may I always be the reason behind your beautiful smile.</p>
+  <h3>Forever and Always, Mahak ❤️😘</h3>
+</div>I LOVE YOU SOOOOO MUCH! ❤️🥹</h3>
+  <p>You are my happiness, my favourite person, my biggest smile and the most beautiful part of my life.</p>
+  <p>Every moment with you is precious. I want to see you smile every day, support you in every situation and hold your hand through every chapter of life.</p>
+  <p>No matter how many birthdays come and go, my wish will always be the same: may I always be the reason behind your beautiful smile.</p>
+  <h3>Forever and Always, Mahak ❤️😘</h3>
+</div>
+ <div class="signature">Forever yours,<br>Uday ♥</div></article></div></section><footer class="footer"><h3>Happy Birthday, Mahak ♥</h3><p>18 November • From Uday</p><a class="btn" data-nav href="index.html">Replay our story ↺</a></footer><div class="music"><button id="musicToggle">♫</button><small id="musicStatus">Music</small><audio id="pageMusic" preload="auto"></audio></div><script src="script.js"></script></body></html>
