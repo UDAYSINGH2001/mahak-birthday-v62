@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#170f2c">
+<title>A little surprise for Mahak ♥</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:22px;background:radial-gradient(circle at 20% 15%,#57366e 0,#251638 38%,#100c20 100%);color:#fff;font-family:Georgia,'Times New Roman',serif;text-align:center;overflow:hidden}
+.card{width:min(100%,520px);padding:clamp(28px,7vw,54px) 24px;border:1px solid #d9a9dc66;border-radius:28px;background:#ffffff0d;box-shadow:0 24px 80px #0008;backdrop-filter:blur(12px);position:relative}
+.eyebrow{font:600 11px/1.5 Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#f1c9ed}
+h1{font-size:clamp(34px,8vw,54px);line-height:1.08;margin:18px 0 12px;font-weight:500}
+p{font:15px/1.7 Arial,sans-serif;color:#eaddec;margin:10px auto;max-width:370px}
+.heart{font-size:36px;animation:pulse 1.4s infinite}
+.timer{display:flex;justify-content:center;gap:10px;margin:30px 0 20px}
+.unit{min-width:74px;padding:14px 8px;border-radius:16px;background:#ffffff12;border:1px solid #ffffff22}
+.num{font:600 clamp(28px,7vw,38px)/1 Arial,sans-serif;color:#fff}
+.lab{font:10px Arial,sans-serif;letter-spacing:.16em;color:#e8bde7;margin-top:8px}
+.note{font-size:12px;color:#d8c3df}
+button{border:0;border-radius:999px;padding:14px 22px;background:#f4c8e9;color:#341b3b;font-weight:700;cursor:pointer;margin-top:12px}
+button:focus{outline:3px solid white;outline-offset:3px}
+@keyframes pulse{50%{transform:scale(1.16)}}
+.stars{position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#fff9 1px,transparent 1px),radial-gradient(#eab8ff88 1px,transparent 1px);background-size:83px 83px,127px 127px;background-position:0 0,35px 50px;opacity:.3}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<main class="card">
+  <div class="eyebrow">A secret message from Uday</div>
+  <div class="heart">♥</div>
+  <h1>Hey Mahak!</h1>
+  <p>Someone has prepared a little world full of memories, love and surprises just for you.</p>
+  <p><strong>But madam ji… not so fast! 😂</strong><br>Some surprises are worth waiting for.</p>
+  <div class="timer" aria-live="polite">
+    <div class="unit"><div class="num" id="hours">00</div><div class="lab">HOURS</div></div>
+    <div class="unit"><div class="num" id="minutes">00</div><div class="lab">MINUTES</div></div>
+    <div class="unit"><div class="num" id="seconds">00</div><div class="lab">SECONDS</div></div>
+  </div>
+  <p id="status">Your surprise unlocks at <strong>12:00 AM · 18 November</strong>.</p>
+  <p class="note">🎧 Keep your earphones ready. And remember… DIL THAAM KE BAITHNA! 💗</p>
+  <button id="check" type="button">I'm waiting… 💕</button>
+</main>
+<script>
+(() => {
+  // India Standard Time: 18 November 2026, 00:00
+  const target = new Date('2026-11-18T00:00:00+05:30').getTime();
+  const birthdayUrl = 'https://udaysingh2001.github.io/mahak-birthday-v62/index.html';
+  const pad = n => String(n).padStart(2,'0');
+  function tick(){
+    const diff = target - Date.now();
+    if(diff <= 0){
+      document.getElementById('hours').textContent='00';
+      document.getElementById('minutes').textContent='00';
+      document.getElementById('seconds').textContent='00';
+      document.getElementById('status').textContent='SURPRISE UNLOCKED! Taking you to your birthday world… ♥';
+      document.getElementById('check').textContent='Open my surprise! 🎁';
+      setTimeout(() => location.replace(birthdayUrl), 1800);
+      return;
+    }
+    const total = Math.floor(diff/1000);
+    document.getElementById('hours').textContent=pad(Math.floor(total/3600));
+    document.getElementById('minutes').textContent=pad(Math.floor((total%3600)/60));
+    document.getElementById('seconds').textContent=pad(total%60);
+    document.getElementById('check').onclick=()=>{ tick(); };
+  }
+  tick();
+  setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
